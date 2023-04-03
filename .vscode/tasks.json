@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CatsAndRats2D Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Test",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Test",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Test",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Shipping",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Shipping",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"Linux",
+				"Shipping",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D LinuxArm64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D LinuxArm64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D LinuxArm64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Test",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Test",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D LinuxArm64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Test",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Shipping",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Shipping",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2D LinuxArm64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2D LinuxArm64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2D",
+				"LinuxArm64",
+				"Shipping",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2DEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"Debug",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2DEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"DebugGame",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CatsAndRats2DEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		},
+		{
+			"label": "CatsAndRats2DEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CatsAndRats2DEditor",
+				"Linux",
+				"Development",
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/megamarchewa/UnrealEngine"
+			}
+		}
+	]
+}

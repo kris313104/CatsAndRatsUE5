@@ -1,0 +1,121 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch CatsAndRats2D (Debug)",
+			"request": "launch",
+			"program": "/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/Binaries/Linux/CatsAndRats2D-Linux-Debug",
+			"preLaunchTask": "CatsAndRats2D Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch CatsAndRats2D (DebugGame)",
+			"request": "launch",
+			"program": "/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/Binaries/Linux/CatsAndRats2D-Linux-DebugGame",
+			"preLaunchTask": "CatsAndRats2D Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch CatsAndRats2D (Development)",
+			"request": "launch",
+			"program": "/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/Binaries/Linux/CatsAndRats2D",
+			"preLaunchTask": "CatsAndRats2D Linux Development Build",
+			"args": [
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch CatsAndRats2D (Test)",
+			"request": "launch",
+			"program": "/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/Binaries/Linux/CatsAndRats2D-Linux-Test",
+			"preLaunchTask": "CatsAndRats2D Linux Test Build",
+			"args": [
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch CatsAndRats2D (Shipping)",
+			"request": "launch",
+			"program": "/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/Binaries/Linux/CatsAndRats2D-Linux-Shipping",
+			"preLaunchTask": "CatsAndRats2D Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch CatsAndRats2DEditor (Debug)",
+			"request": "launch",
+			"program": "/home/megamarchewa/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"preLaunchTask": "CatsAndRats2DEditor Linux Debug Build",
+			"args": [
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject"
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch CatsAndRats2DEditor (DebugGame)",
+			"request": "launch",
+			"program": "/home/megamarchewa/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"preLaunchTask": "CatsAndRats2DEditor Linux DebugGame Build",
+			"args": [
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject"
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch CatsAndRats2DEditor (Development)",
+			"request": "launch",
+			"program": "/home/megamarchewa/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+			"preLaunchTask": "CatsAndRats2DEditor Linux Development Build",
+			"args": [
+				"/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject"
+			],
+			"cwd": "/home/megamarchewa/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/megamarchewa/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "/home/megamarchewa/UnrealEngine/Engine/Build/BatchFiles/RunUBT.bat",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/CatsAndRats2D.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "internalConsole",
+			"internalConsoleOptions": "openOnSessionStart",
+			"stopAtEntry": false,
+			"cwd": "/home/megamarchewa/UnrealEngine"
+		}
+	]
+}
