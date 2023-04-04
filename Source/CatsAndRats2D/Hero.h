@@ -10,11 +10,13 @@
 #include "InputActionValue.h"
 #include "GameFramework/Character.h"
 #include "Components/ArrowComponent.h"
+#include "Public/Health/HealthComponent.h"
 
 #include "Hero.generated.h"
 
 class UInputMappingContext;
 class UInputAction;
+
 /**
  *
  */
@@ -32,12 +34,11 @@ public:
 	UPROPERTY(EditAnywhere, Category = Camera)
 	UCameraComponent *FollowCamera;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	UHealthComponent *HealthComponent;
 
 protected:
 	virtual void BeginPlay() override;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
-	UInputMappingContext *MappingContext1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GameMode)
 	UInputMappingContext *MappingContext;

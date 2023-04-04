@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-
-#include "Hero.h"
 #include "CatsAndRats2DGameModeBase.h"
+#include "Hero.h"
+
 
 ACatsAndRats2DGameModeBase::ACatsAndRats2DGameModeBase()
 {

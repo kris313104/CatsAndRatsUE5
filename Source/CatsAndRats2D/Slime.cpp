@@ -13,9 +13,10 @@ ASlime::ASlime()
 
     SensingComponent = CreateDefaultSubobject<UPawnSensingComponent>(TEXT("Sensing Component"));
 
+    HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
+
 
     IsMoving = false;
-
     Rotate = false;
 
     MyPawn = Cast<APawn>(this);

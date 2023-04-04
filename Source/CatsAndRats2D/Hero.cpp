@@ -9,7 +9,6 @@
 #include "InputMappingContext.h"
 
 
-
 AHero::AHero()
 {
     PrimaryActorTick.bCanEverTick = true;
@@ -23,15 +22,18 @@ AHero::AHero()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Follow Camera"));
 	FollowCamera->SetupAttachment(CameraBoom);
 
+    HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
+
+
     AttackState = 0;
     CanAttack = true;
-
     IsRunning = false;
     IsJumping = false;
     Rotate = false;
     IsDrawn = false;
     CanDrwSht = true;
     IsMovementLocked = false;
+
 }
 
 void AHero::BeginPlay()
@@ -45,7 +47,7 @@ void AHero::BeginPlay()
         UEnhancedInputLocalPlayerSubsystem *Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
         if (Subsystem)
         {
-            Subsystem->AddMappingContext(MappingContext1, 0);
+            Subsystem->AddMappingContext(MappingContext, 0);
         }
     }
 }

@@ -1,10 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
+
 #include "CoreMinimal.h"
 #include "PaperZDCharacter.h"
 
-
+#include "Public/Health/HealthComponent.h"
 
 #include "Slime.generated.h"
 
@@ -23,6 +24,10 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = AI)
 	UPawnSensingComponent *SensingComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	UHealthComponent *HealthComponent;
+
 
 	UFUNCTION(BlueprintCallable)
 	void SetIsMoving(bool _IsMoving);
