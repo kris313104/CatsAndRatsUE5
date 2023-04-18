@@ -10,8 +10,9 @@ UHealthComponent::UHealthComponent()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = false;
 
-	DefaultHealth = 100;
-	Health = DefaultHealth;
+	//! Default health should be h(x)=4*x
+	MaxHealth = 0;
+	CurrentHealth = MaxHealth;
 }
 
 
@@ -34,9 +35,18 @@ void UHealthComponent::TakeDamage(AActor * DamagedActor, float Damage, const cla
 			return;
 	}
 
-	Health = FMath::Clamp(Health - Damage, 0, DefaultHealth);
+	CurrentHealth = FMath::Clamp(CurrentHealth - Damage, 0, MaxHealth);
 }
 
+// int UHealthComponent::GetCurrentHealth()
+// {
+// 	return CurrentHealth;
+// }
+
+// void UHealthComponent::SetCurrentHealth(int _CurrentHealth)
+// {
+// 	CurrentHealth = _CurrentHealth;
+// }
 
 // Called every frame
 // void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)

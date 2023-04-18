@@ -22,18 +22,23 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
-	int DefaultHealth;
+	int MaxHealth;
 
-	UPROPERTY(BlueprintReadOnly)
-	int Health;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	int CurrentHealth;
 
 	UFUNCTION()
 	void TakeDamage(AActor * DamagedActor, float Damage, const class UDamageType * DamageType, class AController * InstigatedBy, AActor * DamageCauser);
 
+	// UFUNCTION()
+	// int GetCurrentHealth();
 
-// public:
-// 	// Called every frame
-// 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	// UFUNCTION()
+	// void SetCurrentHealth(int _CurrentHealth);
+
+	// public:
+	// 	// Called every frame
+	// 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 
 

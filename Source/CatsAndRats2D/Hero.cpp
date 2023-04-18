@@ -9,6 +9,7 @@
 #include "InputMappingContext.h"
 
 
+
 AHero::AHero()
 {
     PrimaryActorTick.bCanEverTick = true;
@@ -137,19 +138,27 @@ void AHero::CheckJump(const FInputActionValue &Value)
 
 void AHero::DrwSht(const FInputActionValue &Value)
 {
+
+    if(!(AttackState > 1))
+    {
+        CanDrwSht = true;
+    }
+    else
+    {
+        CanDrwSht = false;
+    }
+
     if(CanDrwSht)
     {
         if(IsDrawn)
         {
             CanDrwSht = false;
             IsDrawn = false;
-            UE_LOG(LogTemp, Warning, TEXT("Shiting sword"));
         }
         else
         {
             CanDrwSht = false;
             IsDrawn = true;
-            UE_LOG(LogTemp, Warning, TEXT("Drawing sword"));
         }
     }
 }
