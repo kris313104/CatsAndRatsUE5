@@ -42,7 +42,7 @@ public:
 
 
 #include "Pickup.h"
-#include "../Hero.h"
+#include "Hero.h"
 #include "Components/ShapeComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Engine/EngineTypes.h"

@@ -1,28 +1,20 @@
 {
     "configurations": [
         {
-            "name": "CatsAndRats2DEditor Editor Linux Development (CatsAndRats2D)",
+            "name": "CatsAndRats2DEditor Editor Win64 Development (CatsAndRats2D)",
             "compilerPath": "/home/megamarchewa/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
-            "compilerArgs": [
-                "-isysroot",
-                "/home/megamarchewa/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu"
-            ],
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64",
-            "compileCommands": "/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/.vscode/compileCommands_CatsAndRats2D.json"
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D.json"
         },
         {
-            "name": "Linux",
+            "name": "Win32",
             "compilerPath": "/home/megamarchewa/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
-            "compilerArgs": [
-                "-isysroot",
-                "/home/megamarchewa/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu"
-            ],
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64",
-            "compileCommands": "/home/megamarchewa/Documents/Unreal Projects/CatsAndRats2D/.vscode/compileCommands_Default.json"
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_Default.json"
         }
     ],
     "version": 4
