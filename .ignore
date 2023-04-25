@@ -1,7 +1,10 @@
 .git
+.vs
 .vscode
 Content
+DerivedDataCache
 Intermediate
+Platforms
 Saved
 Plugins/PaperZD/Content
 Plugins/PaperZD/Intermediate

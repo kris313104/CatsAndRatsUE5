@@ -2144,7 +2144,23 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Private\\Pickup.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Public\\Health\\HealthComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Public\\Pickup.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
 			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
