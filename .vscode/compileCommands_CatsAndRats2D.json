@@ -2080,10 +2080,274 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\Door.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\DungeonGenerator.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\DungeonOctree.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\ProceduralDungeon.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\ProceduralDungeonLog.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\ProceduralDungeonSettings.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\ProceduralDungeonTypes.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\ProceduralLevelStreaming.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\QueueOrStack.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\Room.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\RoomData.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\RoomLevel.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\RoomLockerBase.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\RoomVisibilityComponent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\TriggerDoor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Private\\TriggerType.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\ProceduralDungeon.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\Door.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\DungeonGenerator.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\DungeonOctree.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\ProceduralDungeon.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\ProceduralDungeonLog.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\ProceduralDungeonSettings.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\ProceduralDungeonTypes.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\ProceduralLevelStreaming.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\QueueOrStack.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\Room.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\RoomData.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\RoomLevel.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\RoomLockerBase.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\RoomVisibilityComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\TriggerDoor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Plugins\\ProceduralDungeon\\Source\\ProceduralDungeon\\Public\\TriggerType.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\ProceduralDungeon.28.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\CatsAndRats2D.Build.cs",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2091,7 +2355,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\CatsAndRats2D.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2099,7 +2363,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\CatsAndRats2D.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2107,7 +2371,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\CatsAndRats2DGameModeBase.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2115,7 +2379,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\CatsAndRats2DGameModeBase.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2123,7 +2387,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Hero.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2131,7 +2395,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Hero.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2139,7 +2403,15 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Private\\Health\\HealthComponent.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Private\\InventoryComponent.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2147,7 +2419,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Private\\Pickup.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2155,7 +2427,15 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Public\\Health\\HealthComponent.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Public\\InventoryComponent.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2163,7 +2443,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Public\\Pickup.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2171,7 +2451,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Slime.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	},
@@ -2179,7 +2459,7 @@
 		"file": "C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\Source\\CatsAndRats2D\\Slime.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
-			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.257.rsp"
+			"@C:\\Users\\Kris\\Documents\\Unreal Projects\\CatsAndRatsUE5\\.vscode\\compileCommands_CatsAndRats2D\\CatsAndRats2D.258.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
 	}

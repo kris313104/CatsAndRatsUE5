@@ -31,6 +31,7 @@ AHero::AHero()
     IsRunning = false;
     IsJumping = false;
     Rotate = false;
+    FacingFront = true;
     IsDrawn = false;
     CanDrwSht = true;
     IsMovementLocked = false;
@@ -56,8 +57,6 @@ void AHero::BeginPlay()
 void AHero::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-
-
 
     if (IsJumping)
     {
@@ -103,6 +102,11 @@ void AHero::Move(const FInputActionValue& Value)
         {
             FVector Sideways = GetActorRightVector();
             AddMovementInput(Sideways, -DirectionValue.Y);
+
+            if (DirectionValue.Y < 0)
+                FacingFront = true;
+            else
+                FacingFront = false;
         }
     }
 

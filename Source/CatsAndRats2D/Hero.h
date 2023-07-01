@@ -77,6 +77,9 @@ protected:
 	bool Rotate;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	bool FacingFront;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	bool IsDrawn;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
