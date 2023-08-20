@@ -1,3 +1,4 @@
+
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
@@ -8,8 +9,6 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "InputActionValue.h"
-#include "GameFramework/Character.h"
-#include "Components/ArrowComponent.h"
 #include "Public/Health/HealthComponent.h"
 
 #include "Hero.generated.h"
@@ -27,7 +26,7 @@ class CATSANDRATS2D_API AHero : public APaperZDCharacter
 
 public:
 	AHero();
-
+	
 	UPROPERTY(EditAnywhere, Category = Camera)
 	USpringArmComponent *CameraBoom;
 
@@ -36,6 +35,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	UHealthComponent *HealthComponent;
+
 
 protected:
 	virtual void BeginPlay() override;
@@ -103,8 +103,10 @@ protected:
 	void Attack(const FInputActionValue &Value);
 
 public:
+	
+	void checkForSpriteRotationChange();
+	
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind funcionality to input
+	
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 };
