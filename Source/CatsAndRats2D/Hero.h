@@ -101,10 +101,13 @@ protected:
 	void DrwSht(const FInputActionValue &Value);
 
 	void Attack(const FInputActionValue &Value);
+	
+	void checkForSpriteRotationChange();
+	
 
 public:
 	
-	void checkForSpriteRotationChange();
+	
 	
 	virtual void Tick(float DeltaTime) override;
 	

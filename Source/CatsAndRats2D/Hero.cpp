@@ -5,9 +5,12 @@
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
 #include "PaperFlipbookComponent.h"
+#include "PaperZDAnimationComponent.h"
+#include "PaperZDAnimInstance.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "Camera/CameraComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Health/HealthComponent.h"
 
@@ -189,35 +192,34 @@ void AHero::CheckJump(const FInputActionValue &Value)
 
 void AHero::DrwSht(const FInputActionValue &Value)
 {
-
-    if(!(AttackState > 1))
+    if (CanDrwSht)
     {
-        CanDrwSht = true;
-    }
-    else
-    {
-        CanDrwSht = false;
-    }
-
-    if(CanDrwSht)
-    {
-        if(IsDrawn)
+        if (IsDrawn)
         {
-            CanDrwSht = false;
+            
+            GetAnimationComponent()->GetAnimInstance()->JumpToNode("Shiting");
             IsDrawn = false;
         }
         else
         {
-            CanDrwSht = false;
+            GetAnimationComponent()->GetAnimInstance()->JumpToNode("Drawing");
             IsDrawn = true;
         }
+        CanDrwSht = false;
+        GetCharacterMovement()->StopMovementImmediately();
+        IsMovementLocked = true;
     }
+    
 }
 
 
 void AHero::Attack(const FInputActionValue &Value)
 {
-
+    if (IsDrawn && CanAttack == true)
+    {
+        GetAnimationComponent()->GetAnimInstance()->JumpToNode("Attacking1");
+        CanAttack = false;
+    }
 }
 
 void AHero::checkForSpriteRotationChange()
@@ -231,6 +233,6 @@ void AHero::checkForSpriteRotationChange()
         GetSprite()->SetRelativeRotation(FRotator(0.f, 0.f, 165.f));
         
     }
-    UE_LOG(LogTemp, Display, TEXT(" %f"), GetSprite()->GetRelativeRotation().Yaw);
 }
+
 
