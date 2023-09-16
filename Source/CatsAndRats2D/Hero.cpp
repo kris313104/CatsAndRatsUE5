@@ -2,8 +2,11 @@
 
 
 #include "Hero.h"
+
+#include "EngineUtils.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "MinionSpawner.h"
 #include "PaperFlipbookComponent.h"
 #include "PaperZDAnimationComponent.h"
 #include "PaperZDAnimInstance.h"
@@ -39,7 +42,7 @@ AHero::AHero()
 
     HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
 
-
+    // Variable init
     AttackState = 0;
     CanAttack = true;
     IsRunning = false;
@@ -81,19 +84,25 @@ void AHero::Tick(float DeltaTime)
    
 }
 
+
+
 void AHero::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
         Super::SetupPlayerInputComponent(PlayerInputComponent);
 
         if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent))
         {
-        EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AHero::Move);
-        // EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &AHero::CheckJump);
-        // EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AHero::CheckJump);
-        EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Started, this, &AHero::Run);
-        EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Completed, this, &AHero::StopRun);
-        EnhancedInputComponent->BindAction(DrwShtAction, ETriggerEvent::Started, this, &AHero::DrwSht);
-        EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Started, this, &AHero::Attack);
+
+            // Player actions
+            EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AHero::Move);
+            EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Started, this, &AHero::Run);
+            EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Completed, this, &AHero::StopRun);
+            EnhancedInputComponent->BindAction(DrwShtAction, ETriggerEvent::Started, this, &AHero::DrwSht);
+            EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Started, this, &AHero::Attack);
+
+            // Player interactions
+            EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &AHero::Interract);
+            
         }
 }
 
@@ -222,7 +231,7 @@ void AHero::Attack(const FInputActionValue &Value)
     }
 }
 
-void AHero::checkForSpriteRotationChange()
+void AHero::CheckForSpriteRotationChange()
 {
     if (Rotate)
     {
@@ -235,4 +244,22 @@ void AHero::checkForSpriteRotationChange()
     }
 }
 
+void AHero::Interract()
+{
+    UWorld* World = GetWorld();
 
+    if (World)
+    {
+        TArray<AMinionSpawner*> MinionSpawners;;
+        TActorIterator<AMinionSpawner> SpawnerIterator(World);
+        while (SpawnerIterator)
+        {
+            AMinionSpawner *MinionSpawner = *SpawnerIterator;
+            if (MinionSpawner)
+            {
+                MinionSpawners.Add(MinionSpawner);
+            }
+            ++SpawnerIterator;
+        }
+    }
+}

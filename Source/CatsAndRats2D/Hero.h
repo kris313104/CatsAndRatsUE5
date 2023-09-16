@@ -59,6 +59,9 @@ protected:
 	UInputAction *AttackAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
+	UInputAction *InteractAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
 	float MovementSpeed;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Input)
@@ -102,7 +105,7 @@ protected:
 
 	void Attack(const FInputActionValue &Value);
 	
-	void checkForSpriteRotationChange();
+	void CheckForSpriteRotationChange();
 	
 
 public:
@@ -110,6 +113,7 @@ public:
 	
 	
 	virtual void Tick(float DeltaTime) override;
-	
+
+	void Interract();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 };
