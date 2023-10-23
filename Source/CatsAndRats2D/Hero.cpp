@@ -101,7 +101,7 @@ void AHero::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
             EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Started, this, &AHero::Attack);
 
             // Player interactions
-            EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &AHero::Interract);
+            EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &AHero::Interact);
             
         }
 }
@@ -244,10 +244,10 @@ void AHero::CheckForSpriteRotationChange()
     }
 }
 
-void AHero::Interract()
+void AHero::Interact()
 {
     UWorld* World = GetWorld();
-
+    UE_LOG(LogTemp, Warning, TEXT("interact initiated"));
     if (World)
     {
         TArray<AMinionSpawner*> MinionSpawners;;
@@ -258,7 +258,10 @@ void AHero::Interract()
             if (MinionSpawner)
             {
                 MinionSpawners.Add(MinionSpawner);
+
+                MinionSpawner->SpawnMinion();
             }
+            UE_LOG(LogTemp, Warning, TEXT("++SpawnerIterator"));
             ++SpawnerIterator;
         }
     }

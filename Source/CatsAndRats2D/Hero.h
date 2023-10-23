@@ -114,6 +114,6 @@ public:
 	
 	virtual void Tick(float DeltaTime) override;
 
-	void Interract();
+	void Interact();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 };
