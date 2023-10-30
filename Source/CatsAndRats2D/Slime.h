@@ -22,7 +22,7 @@ class CATSANDRATS2D_API ASlime : public APaperZDCharacter
 public:
 	ASlime();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = AI)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UPawnSensingComponent *SensingComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
