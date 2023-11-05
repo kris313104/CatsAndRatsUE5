@@ -93,7 +93,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
 	bool IsMovementLocked;
-
+	
+	
 	void Move(const FInputActionValue& Value);
 
 	void Run(const FInputActionValue &Value);
@@ -116,4 +117,7 @@ public:
 
 	void Interact();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+private:
+	APlayerController *PlayerController;
 };

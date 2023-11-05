@@ -10,6 +10,7 @@
 #include "PaperFlipbookComponent.h"
 #include "PaperZDAnimationComponent.h"
 #include "PaperZDAnimInstance.h"
+#include "Slime.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "Camera/CameraComponent.h"
@@ -53,6 +54,7 @@ AHero::AHero()
     CanDrwSht = true;
     IsMovementLocked = false;
 
+    
 }
 
 void AHero::BeginPlay()
@@ -60,9 +62,13 @@ void AHero::BeginPlay()
     Super::BeginPlay();
 
     // Add Input Mapping Context
-    APlayerController *PlayerController = Cast<APlayerController>(GetController());
+    PlayerController = Cast<APlayerController>(GetController());
     if (PlayerController)
     {
+        PlayerController->SetShowMouseCursor(true);
+        PlayerController->bEnableClickEvents = true;
+        PlayerController->bEnableMouseOverEvents = true;
+        
         UEnhancedInputLocalPlayerSubsystem *Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
         if (Subsystem)
         {
@@ -80,7 +86,21 @@ void AHero::Tick(float DeltaTime)
         Jump();
     }
 
-    
+    if (PlayerController)
+    {
+        TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+        ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));
+        FHitResult HitResult;
+        if (PlayerController->GetHitResultUnderCursorForObjects(ObjectTypes, true, HitResult))
+        {
+            UE_LOG(LogTemp, Warning, TEXT("Clicked on Pawn"));
+            
+            if (HitResult.GetActor()->ActorHasTag(TEXT("ENEMY")))
+            {
+                UE_LOG(LogTemp, Warning, TEXT("Clicked on Slime"));
+            }
+        }
+    }
    
 }
 
