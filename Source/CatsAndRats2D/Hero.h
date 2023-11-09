@@ -36,6 +36,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	UHealthComponent *HealthComponent;
 
+	UFUNCTION(BlueprintCallable)
+	void AttackWithMinions(AActor *AttackedActor, bool Attack);
+
+	UFUNCTION(BlueprintCallable)
+	void MoveMinionsToLocation(FVector MovingLocation);
 
 protected:
 	virtual void BeginPlay() override;
@@ -107,17 +112,26 @@ protected:
 	void Attack(const FInputActionValue &Value);
 	
 	void CheckForSpriteRotationChange();
-	
 
 public:
-	
-	
-	
+	virtual void NotifyActorOnClicked(FKey ButtonPressed) override;
+
+
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintPure, BlueprintCallable)
+	AActor* GetSelectedEnemyActor() const { return SelectedEnemy; }
+	
 	void Interact();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION(BlueprintPure, BlueprintInternalUseOnly)
+	TArray<APawn*> GetCurrentMinions() const { return CurrentMinions; }
+	
 private:
 	APlayerController *PlayerController;
+
+	AActor *SelectedEnemy;
+
+	TArray<APawn*> CurrentMinions;
 };

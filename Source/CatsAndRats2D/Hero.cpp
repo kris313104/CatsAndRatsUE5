@@ -3,6 +3,7 @@
 
 #include "Hero.h"
 
+#include "AIController.h"
 #include "EngineUtils.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
@@ -11,6 +12,7 @@
 #include "PaperZDAnimationComponent.h"
 #include "PaperZDAnimInstance.h"
 #include "Slime.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "Camera/CameraComponent.h"
@@ -75,6 +77,21 @@ void AHero::BeginPlay()
             Subsystem->AddMappingContext(MappingContext, 0);
         }
     }
+
+
+
+    // Add manually placed minions to players current minions
+    
+    for (FActorIterator ActorIterator(GetWorld()); ActorIterator; ++ActorIterator)
+    {
+        AMinion* Minion = Cast<AMinion>(*ActorIterator);
+        if (Minion)
+        {
+            CurrentMinions.Add(Cast<APawn>(Minion));
+        }
+        
+    }
+    
 }
 
 void AHero::Tick(float DeltaTime)
@@ -85,23 +102,7 @@ void AHero::Tick(float DeltaTime)
     {
         Jump();
     }
-
-    if (PlayerController)
-    {
-        TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
-        ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));
-        FHitResult HitResult;
-        if (PlayerController->GetHitResultUnderCursorForObjects(ObjectTypes, true, HitResult))
-        {
-            UE_LOG(LogTemp, Warning, TEXT("Clicked on Pawn"));
-            
-            if (HitResult.GetActor()->ActorHasTag(TEXT("ENEMY")))
-            {
-                UE_LOG(LogTemp, Warning, TEXT("Clicked on Slime"));
-            }
-        }
-    }
-   
+    
 }
 
 
@@ -244,10 +245,52 @@ void AHero::DrwSht(const FInputActionValue &Value)
 
 void AHero::Attack(const FInputActionValue &Value)
 {
-    if (IsDrawn && CanAttack == true)
+    // if (IsDrawn && CanAttack == true)
+    // {
+    //     GetAnimationComponent()->GetAnimInstance()->JumpToNode("Attacking1");
+    //     CanAttack = false;
+    // }
+
+    if (PlayerController)
     {
-        GetAnimationComponent()->GetAnimInstance()->JumpToNode("Attacking1");
-        CanAttack = false;
+        TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+
+        // Object types the player can hit
+        ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));
+        ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldDynamic));
+        
+        FHitResult HitResult;
+        if (PlayerController->GetHitResultUnderCursorForObjects(ObjectTypes, true, HitResult))
+        {
+
+            if (HitResult.GetActor()->ActorHasTag(TEXT("ENEMY")))
+            {
+                SelectedEnemy = HitResult.GetActor();
+
+                AttackWithMinions(SelectedEnemy, true);
+            }
+            else if(HitResult.GetActor()->ActorHasTag(TEXT("FLOOR")))
+            {
+                SelectedEnemy = nullptr;
+                FVector MovingLocation = FVector(HitResult.Location.X, HitResult.Location.Y, HitResult.Location.Z);
+                MoveMinionsToLocation(MovingLocation);
+                AttackWithMinions(SelectedEnemy, false);
+            }
+            else
+            {
+                SelectedEnemy = nullptr;
+
+                AttackWithMinions(SelectedEnemy, false);
+            }
+        }
+        
+        else
+        {
+            SelectedEnemy = nullptr;
+
+            AttackWithMinions(SelectedEnemy, false);
+        }
+        
     }
 }
 
@@ -260,14 +303,19 @@ void AHero::CheckForSpriteRotationChange()
     else
     {
         GetSprite()->SetRelativeRotation(FRotator(0.f, 0.f, 165.f));
-        
     }
+}
+
+void AHero::NotifyActorOnClicked(FKey ButtonPressed)
+{
+    Super::NotifyActorOnClicked(ButtonPressed);
+    UE_LOG(LogTemp, Warning, TEXT("clicked"));
 }
 
 void AHero::Interact()
 {
     UWorld* World = GetWorld();
-    UE_LOG(LogTemp, Warning, TEXT("interact initiated"));
+    
     if (World)
     {
         TArray<AMinionSpawner*> MinionSpawners;;
@@ -279,10 +327,60 @@ void AHero::Interact()
             {
                 MinionSpawners.Add(MinionSpawner);
 
-                MinionSpawner->SpawnMinion();
+                APawn* SpawnedMinion = Cast<APawn>(MinionSpawner->SpawnMinion());
+
+                if (SpawnedMinion)
+                {
+                    CurrentMinions.Add(SpawnedMinion);
+                }
+                
             }
-            UE_LOG(LogTemp, Warning, TEXT("++SpawnerIterator"));
+            
             ++SpawnerIterator;
         }
     }
 }
+
+
+void AHero::AttackWithMinions(AActor *AttackedActor, bool Attack)
+{
+    UWorld* World = GetWorld();
+    if (World)
+    {
+        for (auto MinionIterator = CurrentMinions.CreateIterator(); MinionIterator; ++MinionIterator)
+        {
+
+            APawn* CurrentMinion = *MinionIterator;
+            
+            AAIController* AIController = Cast<AAIController>(CurrentMinion->GetController());
+            
+            AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsEnemySelected")), Attack);
+            // GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, CurrentMinion->GetName());
+            
+        }
+    }
+}
+
+void AHero::MoveMinionsToLocation(FVector MovingLocation)
+{
+    UWorld* World = GetWorld();
+    if (World)
+    {
+        for (auto MinionIterator = CurrentMinions.CreateIterator(); MinionIterator; ++MinionIterator)
+        {
+
+            APawn* CurrentMinion = *MinionIterator;
+            
+            AAIController* AIController = Cast<AAIController>(CurrentMinion->GetController());
+            
+            // AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsMovingToLocation")), false);
+            // AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsEnemySelected")), false);
+            AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsMovingToLocation")), false);
+            AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsMovingToLocation")), true);
+            AIController->GetBlackboardComponent()->SetValueAsVector(FName(TEXT("MovingLocation")), MovingLocation);
+        }
+    }
+}
+
+
+

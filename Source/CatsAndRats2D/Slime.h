@@ -35,9 +35,18 @@ public:
 	UFUNCTION(BlueprintCallable)
 	bool GetIsMoving();
 
+	// UFUNCTION(BlueprintCallable, BlueprintInternalUseOnly)
+	// bool GetIsSelected() const { return IsSelected; }
+	//
+	// UFUNCTION(BlueprintCallable, BlueprintInternalUseOnly)
+	// void SetIsSelected(const bool _IsSelected) { IsSelected = _IsSelected; }
+	
 	virtual void Tick(float DeltaTime) override;
+	
 private:
 	bool IsMoving;
+
+	// bool IsSelected;
 
 	bool Rotate;
 
