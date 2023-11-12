@@ -258,39 +258,44 @@ void AHero::Attack(const FInputActionValue &Value)
         // Object types the player can hit
         ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));
         ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldDynamic));
-        
+
+        bool MinionAttack = false;
+        SelectedEnemy = nullptr;
         FHitResult HitResult;
         if (PlayerController->GetHitResultUnderCursorForObjects(ObjectTypes, true, HitResult))
         {
-
+            
             if (HitResult.GetActor()->ActorHasTag(TEXT("ENEMY")))
             {
                 SelectedEnemy = HitResult.GetActor();
-
-                AttackWithMinions(SelectedEnemy, true);
+                MinionAttack = true;
+                
+                // AttackWithMinions(SelectedEnemy, true);
             }
             else if(HitResult.GetActor()->ActorHasTag(TEXT("FLOOR")))
             {
                 SelectedEnemy = nullptr;
+                MinionAttack = false;
                 FVector MovingLocation = FVector(HitResult.Location.X, HitResult.Location.Y, HitResult.Location.Z);
                 MoveMinionsToLocation(MovingLocation);
-                AttackWithMinions(SelectedEnemy, false);
+                // AttackWithMinions(SelectedEnemy, false);
             }
             else
             {
                 SelectedEnemy = nullptr;
+                MinionAttack = false;
 
-                AttackWithMinions(SelectedEnemy, false);
+                // AttackWithMinions(SelectedEnemy, false);
             }
         }
         
-        else
-        {
-            SelectedEnemy = nullptr;
-
-            AttackWithMinions(SelectedEnemy, false);
-        }
-        
+        // else
+        // {
+        //     SelectedEnemy = nullptr;
+        //     MinionAttack = false;
+        //     // AttackWithMinions(SelectedEnemy, false);
+        // }
+        AttackWithMinions(SelectedEnemy, MinionAttack);
     }
 }
 
@@ -373,8 +378,6 @@ void AHero::MoveMinionsToLocation(FVector MovingLocation)
             
             AAIController* AIController = Cast<AAIController>(CurrentMinion->GetController());
             
-            // AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsMovingToLocation")), false);
-            // AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsEnemySelected")), false);
             AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsMovingToLocation")), false);
             AIController->GetBlackboardComponent()->SetValueAsBool(FName(TEXT("IsMovingToLocation")), true);
             AIController->GetBlackboardComponent()->SetValueAsVector(FName(TEXT("MovingLocation")), MovingLocation);
