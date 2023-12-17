@@ -9,12 +9,16 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "InputActionValue.h"
+// #include "Components/PointLightComponent.h"
+#include "MessageUserWidget.h"
 #include "Public/Health/HealthComponent.h"
 
 #include "Hero.generated.h"
 
+class UPointLightComponent;
 class UInputMappingContext;
 class UInputAction;
+class UMessageUserWidget;
 
 /**
  *
@@ -35,6 +39,15 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	UHealthComponent *HealthComponent;
+
+	UPROPERTY(EditAnywhere, Category = Light)
+	UPointLightComponent *FrontPointLightComponent;
+
+	// UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Light)
+	// UPointLightComponent *BackPointLightComponent;
+
+	UPROPERTY(EditAnywhere, Category = Light)
+	USpringArmComponent *LightArm;
 
 	UFUNCTION(BlueprintCallable)
 	void AttackWithMinions(AActor *AttackedActor, bool Attack);
@@ -98,6 +111,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Input)
 	bool IsMovementLocked;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UMessageUserWidget *InteractMessageWidget;
 	
 	
 	void Move(const FInputActionValue& Value);
@@ -127,6 +143,12 @@ public:
 
 	UFUNCTION(BlueprintPure, BlueprintInternalUseOnly)
 	TArray<APawn*> GetCurrentMinions() const { return CurrentMinions; }
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	UMessageUserWidget* GetMessageUserWidget() const { return InteractMessageWidget; }
+	UFUNCTION(BlueprintCallable)
+	void SetMessageUserWidget(UMessageUserWidget* _messageUserWidget) { InteractMessageWidget = _messageUserWidget; }
+	
 	
 private:
 	APlayerController *PlayerController;

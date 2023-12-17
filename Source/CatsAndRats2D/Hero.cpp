@@ -13,9 +13,11 @@
 #include "PaperZDAnimInstance.h"
 #include "Slime.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Blueprint/UserWidget.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "Camera/CameraComponent.h"
+#include "Components/PointLightComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Health/HealthComponent.h"
@@ -24,6 +26,30 @@
 AHero::AHero()
 {
     PrimaryActorTick.bCanEverTick = true;
+
+    LightArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Light Arm"));
+
+    if (LightArm)
+    {
+        LightArm->SetupAttachment(RootComponent);
+        LightArm->TargetArmLength = 115.0f;
+        LightArm->SetRelativeRotation(FRotator(0.f, 0.f ,180.f));
+        
+        FrontPointLightComponent = CreateDefaultSubobject<UPointLightComponent>(TEXT("Front Point Light"));
+
+        if (FrontPointLightComponent)
+        {
+            FrontPointLightComponent->SetupAttachment(LightArm);
+        }
+        
+        // BackPointLightComponent = CreateDefaultSubobject<UPointLightComponent>(TEXT("Back Point Light"));
+        //
+        // if (BackPointLightComponent)
+        // {
+        //     BackPointLightComponent->SetupAttachment(LightArm);
+        // }
+    }
+    
 
     //Camera and SpringArm configuration
     CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("Camera Boom"));
@@ -44,7 +70,7 @@ AHero::AHero()
     }
 
     HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
-
+    
     // Variable init
     AttackState = 0;
     CanAttack = true;
@@ -105,8 +131,6 @@ void AHero::Tick(float DeltaTime)
     
 }
 
-
-
 void AHero::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
         Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -147,7 +171,8 @@ void AHero::Move(const FInputActionValue& Value)
                 // checkForSpriteRotationChange();
                 //change sprite rotation to the left
                 this->GetSprite()->SetRelativeRotation(FRotator(0.f, 180.f,0.f));
-                
+                LightArm->SetRelativeRotation(FRotator(0.0f, 0.f, 0.f));
+                LightArm->TargetArmLength = 100;
                 if (DirectionValue.Y == 0.f || DirectionValue.Y == -0.f)
                 {
                     FacingFront = true;
@@ -163,6 +188,8 @@ void AHero::Move(const FInputActionValue& Value)
                 Rotate = false;
                 // Change sprite rotation to the right
                 this->GetSprite()->SetRelativeRotation(FRotator(0.f, 0, 0.f));
+                LightArm->SetRelativeRotation(FRotator(180.f, 0.f, 0.f));
+                LightArm->TargetArmLength = 115;
                 if (DirectionValue.Y == 0.f || DirectionValue.Y == -0.f)
                 {
                     FacingFront = true;
