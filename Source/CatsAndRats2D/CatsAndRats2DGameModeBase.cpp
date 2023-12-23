@@ -12,6 +12,8 @@ ACatsAndRats2DGameModeBase::ACatsAndRats2DGameModeBase()
     AttackState = 0;
     NextAttack = false;
     TransitionToNextAttack = false;
+
+    Score = 200;
 }
 
 int ACatsAndRats2DGameModeBase::GetAttackState()

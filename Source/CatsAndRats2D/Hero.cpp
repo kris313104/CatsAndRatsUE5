@@ -142,7 +142,7 @@ void AHero::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
             EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AHero::Move);
             EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Started, this, &AHero::Run);
             EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Completed, this, &AHero::StopRun);
-            EnhancedInputComponent->BindAction(DrwShtAction, ETriggerEvent::Started, this, &AHero::DrwSht);
+            // EnhancedInputComponent->BindAction(DrwShtAction, ETriggerEvent::Started, this, &AHero::DrwSht);
             EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Started, this, &AHero::Attack);
 
             // Player interactions
@@ -285,13 +285,15 @@ void AHero::Attack(const FInputActionValue &Value)
         // Object types the player can hit
         ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_Pawn));
         ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldDynamic));
+        // ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECC_WorldStatic));
 
         bool MinionAttack = false;
         SelectedEnemy = nullptr;
         FHitResult HitResult;
         if (PlayerController->GetHitResultUnderCursorForObjects(ObjectTypes, true, HitResult))
         {
-            
+            UE_LOG(LogTemp, Warning, TEXT("%s"), HitResult.GetActor());
+
             if (HitResult.GetActor()->ActorHasTag(TEXT("ENEMY")))
             {
                 SelectedEnemy = HitResult.GetActor();
@@ -395,6 +397,7 @@ void AHero::AttackWithMinions(AActor *AttackedActor, bool Attack)
 
 void AHero::MoveMinionsToLocation(FVector MovingLocation)
 {
+    // UE_LOG(LogTemp, Warning, TEXT("This is a warning message"));
     UWorld* World = GetWorld();
     if (World)
     {

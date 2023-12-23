@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EnvironmentQuery/EnvQueryTypes.h"
 #include "GameFramework/GameModeBase.h"
 #include "CatsAndRats2DGameModeBase.generated.h"
 
@@ -34,10 +35,23 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SetTransitionToNextAttack(bool _TransitionToNextAttack);
 
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	int GetCurrentScore() const {return Score; }
+
+	UFUNCTION(BlueprintCallable)
+	void SetCurrentScore(int _score) { Score = _score; }
+
+	UFUNCTION(BlueprintCallable)
+	void AddScore(int _score) {Score += _score; }
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void UpdateScoreOnScreen();
 private:
 	int AttackState;
 
 	bool NextAttack;
 
 	bool TransitionToNextAttack;
+
+	int Score;
 };
