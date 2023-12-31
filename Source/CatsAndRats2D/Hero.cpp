@@ -59,14 +59,12 @@ AHero::AHero()
         CameraBoom->SetupAttachment(RootComponent);
 
         CameraBoom->TargetArmLength = 500.0f;
-        //CameraBoom->SetRelativeRotation(FRotator(0.0f, 50.0f, 0.0f));
 
         FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Follow Camera"));
         if (FollowCamera)
         {
             FollowCamera->SetupAttachment(CameraBoom);
         }
-
     }
 
     HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
@@ -137,17 +135,13 @@ void AHero::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
         if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent))
         {
-
             // Player actions
             EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AHero::Move);
             EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Started, this, &AHero::Run);
             EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Completed, this, &AHero::StopRun);
-            // EnhancedInputComponent->BindAction(DrwShtAction, ETriggerEvent::Started, this, &AHero::DrwSht);
             EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Started, this, &AHero::Attack);
-
             // Player interactions
             EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &AHero::Interact);
-            
         }
 }
 
