@@ -7,6 +7,7 @@
 #include "EngineUtils.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "MainGameInstance.h"
 #include "MinionSpawner.h"
 #include "PaperFlipbookComponent.h"
 #include "PaperZDAnimationComponent.h"
@@ -26,7 +27,7 @@
 AHero::AHero()
 {
     PrimaryActorTick.bCanEverTick = true;
-
+    
     LightArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Light Arm"));
 
     if (LightArm)
@@ -42,14 +43,7 @@ AHero::AHero()
             FrontPointLightComponent->SetupAttachment(LightArm);
         }
         
-        // BackPointLightComponent = CreateDefaultSubobject<UPointLightComponent>(TEXT("Back Point Light"));
-        //
-        // if (BackPointLightComponent)
-        // {
-        //     BackPointLightComponent->SetupAttachment(LightArm);
-        // }
     }
-    
 
     //Camera and SpringArm configuration
     CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("Camera Boom"));
@@ -79,8 +73,6 @@ AHero::AHero()
     IsDrawn = false;
     CanDrwSht = true;
     IsMovementLocked = false;
-
-    
 }
 
 void AHero::BeginPlay()
@@ -102,10 +94,7 @@ void AHero::BeginPlay()
         }
     }
 
-
-
     // Add manually placed minions to players current minions
-    
     for (FActorIterator ActorIterator(GetWorld()); ActorIterator; ++ActorIterator)
     {
         AMinion* Minion = Cast<AMinion>(*ActorIterator);
@@ -113,9 +102,7 @@ void AHero::BeginPlay()
         {
             CurrentMinions.Add(Cast<APawn>(Minion));
         }
-        
     }
-    
 }
 
 void AHero::Tick(float DeltaTime)
